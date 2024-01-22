@@ -1,0 +1,42 @@
+Some important methods of string:
+----------------------------------
+1.trim:-
+--------
+let name = "     name     "
+console.log(name.trim())
+
+Output
+------
+name
+dono side se spaces to hatane ke liye ham trim use kar sakhte hai.
+
+2. toUpperCase
+----------------
+let name = "name"
+console.log(name.toUpperCase())
+
+Output:
+------
+NAME
+Capital letter mein convert ho jaega.
+
+3.toLowerCase()
+----------------
+let name = "name"
+console.log(name.toLowerCase())
+
+Output:
+-------
+name
+convert it into lowercase.
+
+4.Slice:
+--------
+Slice hame help karega characters ko remove karne ke liye.
+
+let name = "deepak"
+console.log(name.slice(0,4))
+
+Output:
+------
+deep

@@ -19,3 +19,7 @@
 // }
 
 // getData()
+
+
+let name = "deepak"
+console.log(name.slice(0,4))
