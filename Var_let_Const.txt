@@ -1,0 +1,81 @@
+Var
+----
+= Var hamara old js mein tha.
+= Var ek function scope hai .. aggar apne ek function mein var ko lekar kuch declare kiya hai 
+ya phir kuch define kiya hai toh aap usko us function ke andar kahin bhi access kar sakhte ho
+par us function se bahar access nahi kar sakhte.
+= Var gets attacted to window object. 
+
+example:
+--------
+function getData(){
+    var name = "deepak"
+    
+    function getName(){
+        console.log(name)
+    }
+    getName()
+}
+getData()
+console.log(name) 
+= Line number 20 this will give you error as i have said its a function scope but here i 
+= am trying to access it outside the function which is not allowed. But yes i can make one more 
+= function and i can access value of name there as well but not outside the function.
+
+= var name; 
+here we will not get any error here we will get undefined and undefined is a special keyword which we will learn 
+while learning hositing and execution context.
+
+var name = "deepak"
+var name = "rahul"
+
+= it allows us to reinitialize value into it. if we will console it we will get rahul as an Output.
+
+
+Window object:-
+--------------
+js mein kain sare features hain jo ham use karte hain par woh features 
+javascript laguage ka part nahi mein but still we can use it for example:
+alert, fetch, document, setTimeout, setInterval etc etc if you want to know more then just go the the browser 
+click on inspect and write window you will get to know a lot of things.
+
+Let:
+----
+
+let is block scope. 
+
+let username = "deepak"
+let username = "deepak" 
+
+line number 46 will give us syntax error as identifier username is already declared.
+declare aap ek hi bar kar sakhte ho but variable aap change kar sakhte ho . 
+
+let username = "deepak"
+username = "rahul"
+console.log(username) =>  "rahul"
+
+Const:
+-----
+Jo chiz change nahi hota hai and const also block scope. 
+
+const name; => this will give you error ham esko empty nahi chod sakhte hame 
+kuch na kuch value dena hi padega otherwise hame error milega 
+Missing intializer to const variable;
+
+aap var and let mein chod sakhte hein apko wahan undefined milega but const mein apko dena hi padega.
+=> we cannot update the value of const it is not allowed yahan bhi hame error milega. 
+ TypeError: Assignment to constant variable.
+
+
+function getData(){
+    function getName(){
+        let name = "deepak"
+        const title = "kumar"
+        console.log(name) => yes here we can access it. 
+    }
+    
+    console.log(title) // cannot acces here, need to access inside the curly braces
+    getName()
+}
+
+getData()
