@@ -84,4 +84,49 @@ numbers.shift()
 console.log(numbers) => [20,30,40]
 
 
+let arrayOne = [1,2,3,4]
+let arrayTwo = [...arrayOne] => using spread operator here
 
+arrayOne.push(5)
+console.log(arrayOne)
+console.log(arrayTwo)
+
+console.log(arrayOne === arrayTwo)
+
+Output:
+-------
+[ 1, 2, 3, 4, 5 ]
+[ 1, 2, 3, 4 ]
+false
+
+aggar mein spread operator use karaunga tab dono ko allag allag memory location milega
+aur aggar yahan ham kuch bh changes karenge arrayOne mein woh sare changes reflect nahi hoga
+arrayTwo mein.
+
+
+ForLoop in Array:
+-----------------
+let arrayOne = [10,20,30,40]
+
+
+for(let i=0; i<arrayOne.length; i++){
+    console.log(arrayOne[i])
+}
+
+Output:
+-------
+10
+20
+30
+40
+
+Adding elements to another array by using Push:
+---------------------------------------------------
+for(let i=0; i<arrayOne.length; i++){
+    arrayTwo.push(arrayOne[i])
+}
+console.log(arrayTwo)
+
+Output:
+-------
+[ 10, 20, 30, 40 ]

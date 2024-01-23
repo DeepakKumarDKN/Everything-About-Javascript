@@ -90,17 +90,32 @@ let day = 2;
 // numbers.shift()
 // console.log(numbers)
 
-let num1 = 1
-let num2 = num1 
-num1++
+// let num1 = 1
+// let num2 = num1 
+// num1++
 
-console.log(num1)
-console.log(num2)
+// console.log(num1)
+// console.log(num2)
 
-let arrayOne = [10,20]
-let arrayTwo = arrayOne
+// let arrayOne = [10,20]
+// let arrayTwo = arrayOne
 
-arrayOne.push(30)
+// arrayOne.push(30)
 
-console.log(arrayOne)
+// console.log(arrayOne)
+// console.log(arrayTwo)
+
+let arrayOne = [10,20,30,40]
+let arrayTwo = []
+// let arrayTwo = [...arrayOne]
+
+// arrayOne.push(5)
+// console.log(arrayOne)
+// console.log(arrayTwo)
+
+// console.log(arrayOne === arrayTwo)
+
+for(let i=0; i<arrayOne.length; i++){
+    arrayTwo.push(arrayOne[i])
+}
 console.log(arrayTwo)
