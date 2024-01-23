@@ -21,5 +21,66 @@
 // getData()
 
 
-let name = "deepak"
-console.log(name.slice(0,4))
+
+// let number = BigInt(12345678901234567899)
+// console.log(typeof number)
+
+let day = 2;
+
+// if(day===0){
+//     console.log('sunday')
+// }else if(day === 1){
+//     console.log('monday')
+// }else if(day === 2){
+//     console.log('tuesday')
+// }else if(day === 3){
+//     console.log('wednesday')
+// }else if(day === 4){
+//     console.log('thrusday')
+// }else if(day === 5){
+//     console.log('friday')
+// }else if(day === 6){
+//     console.log('saturday')
+// }else{
+//     console.log('Invalid Day')
+// }
+
+// day = 5; 
+// switch(day){
+//     case 0:
+//         console.log('Sunday')
+//         break;
+//     case 1:
+//         console.log('Momday')
+//         break;
+//     case 2:
+//         console.log('Tuesday')
+//         break;
+//     case 3:
+//         console.log('Wednesday')
+//         break;
+//     case 4:
+//         console.log('Thrusday')
+//         break;
+//     case 5:
+//         console.log('Friday')
+//         break;
+//     case 6:
+//         console.log('Saturday')
+//         break;
+//     default:
+//         console.log('Invalid Day')
+
+// }
+
+// for(let i=0; i<=5; i++){
+//     if(i === 3){
+//         break;
+//     }else{
+//         console.log(i)
+//     }
+// }
+
+let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
+console.log(cityName)
+console.log(cityName[2])

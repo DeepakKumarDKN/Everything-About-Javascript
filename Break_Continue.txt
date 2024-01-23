@@ -1,0 +1,47 @@
+Continue:
+---------
+
+continue mein jab i ki value 3 hoga tab control else block mein jaega hi nahi 
+woh phir se 7 wale line mein aa jaega and wohi se start hoga phir se program. 
+and jab control 9 wale line pe aaegi tab i ka value automatically increase ho gaya hoga
+and wahan se further hamara program chalega.  
+
+continue mein kya hota hai ki woh us value ko ignore kar deta hai print karega hi nahi. 
+ingnore ka kam hi wohi hai but break mein kya hota hai ki woh wahan se program ko
+execute karna hi bandh kar dega. 
+
+for(let i=0; i<=5; i++){
+    if(i === 3){
+        continue
+    }else{
+        console.log(i)
+    }
+}
+
+Output:
+-------
+0
+1
+2
+4
+5
+
+Break:
+------
+Break mein jab i ki value 3 hoga tab 
+further execution hoga hi nahi wohi ke wohi execution stop ho jaega
+and program stop ho jaega. 
+
+for(let i=0; i<=5; i++){
+    if(i === 3){
+        break;
+    }else{
+        console.log(i)
+    }
+}
+
+Output:
+-------
+0
+1
+2

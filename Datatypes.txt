@@ -1,0 +1,94 @@
+Primitive Datatypes:
+---------------------
+1. string.
+2. number (2 and 2.5)
+3. boolean.
+4. undefined
+5. null
+6. BigInt
+7. Symbol
+
+let age = 23; 
+let firstName = "deepak kumar nayak"
+
+console.log(typeof age) => number
+console.log(typeof firstname) => string
+
+convert number into string:
+--------------------------
+let number = 22 
+console.log(typeof(number + ""))
+number ke saath ek khali string add kar denge toh convert ho jaega into string.
+
+let age = 18;
+age = String(age)
+
+string (convert ho gaya into string) => "22"
+
+
+convert string into number:
+----------------------------
+string se pehle + laga dijiye, it will convert it into number. 
+
+let mystr = +"34"
+console.log(mystr) => string.
+
+let age = "18" => here datatype will be string.
+age = Number(age)
+=> This will convert the age into number
+
+let stringOne = "deepak"
+let stringTwo = "kumar"
+
+let fullName = stringOne + stringTwo
+console.log(fullName) => deepakkumar 
+
+let fullName = stringOne + " "+ stringTwo
+console.log(fullName) => deepak kumar
+-----------
+
+let stringOne = "109"
+let stringTwo = "22"
+
+let result = stringOne + stringTwo
+console.log(result) => 10922
+console.log(typeof result) string
+--------
+
+let stringOne = "109"
+let stringTwo = 22
+
+let result = stringOne + stringTwo
+console.log(result) 10922
+console.log(typeof result) string
+-----
+
+let stringOne = 109
+let stringTwo = "deepak"
+
+let result = stringOne + stringTwo
+console.log(result) => 109deepak
+console.log(typeof result) => string
+----
+
+
+BigInt:
+-------
+
+let number = BigInt(12345678901234567899) => 12345678901234567899n
+console.log(typeof number) => bigint
+
+let num = BigInt(12) => 12n
+console.log(typeof number) => bigint
+
+let sameNum = 12n => this is also a bigint.
+
+=> Ham bignit ko dusre datatypes ke saath use nahi kar sakhte hame ek error milega 
+=> Uncaught TypeError Cannot mix bigint and other datatypes.
+
+let mynum = BigInt(12)
+let samenum = 123
+
+console.log(mynum + samenum) => Error we will get here javascript will not allow to do this it 
+should be Bigint only not any other datatype
+

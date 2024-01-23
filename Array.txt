@@ -1,0 +1,22 @@
+=> Array is a reference datatype.
+=> multiple value aggar apko store karna hah toh uske liye ham array use karange. 
+=> array ko ham square bracket ke andar likhenge.
+=> ham duplicate value bhi use kar sakhte hai array mein.
+=> array mein indexing concept available hai. 
+=> ordered collection of items.
+=> string bhi ham stored kar sakhte hai array mein.
+=> number bhi store kar sakhte hai array mein.
+
+let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
+console.log(cityName)
+console.log(cityName[2])
+Output
+------
+[
+  'mumbai',    'delhi',  
+  'hyderabad', 'chennai',
+  'mumbai',    12,       
+  null,        undefined 
+]
+
+hyderabad

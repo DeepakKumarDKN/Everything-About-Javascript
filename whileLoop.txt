@@ -1,0 +1,35 @@
+
+let i=10;
+while(i>=0){
+    console.log(i);
+    i--
+}
+
+Output
+------
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+adding numbers using while Loop: 
+--------------------------------
+
+let i  = 0 
+let sum = 0
+while(i<=10){
+    sum = sum + i
+    i++
+}
+console.log(sum)
+
+Output
+------
+55
