@@ -15,6 +15,9 @@
 original array mera matlab original array mein bhi aap changes dekh sakhte ho par
 aisa primitive mein nahi hota hai.
 
+=> Array mein ham jyada se jyada traditional for loop and forin loop use karte hai.
+
+
 let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
 console.log(cityName)
 console.log(cityName[2])
