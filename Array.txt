@@ -6,6 +6,14 @@
 => ordered collection of items.
 => string bhi ham stored kar sakhte hai array mein.
 => number bhi store kar sakhte hai array mein.
+=> array is mutuable aap jo bhi changes karoge woh sidha original array ko hit karega.
+
+=> Array ek reference type hai aur jitne bhi reference type hai unko ham object bol sakhte hein.
+=> we will discuss about the diffrence between reference and primitive datatype. 
+=> reference ka type aggar aap check karoge toh apko object milega.
+=> reference datatype mein aap jo bhi changes karoge woh sidha hit karega hamara
+original array mera matlab original array mein bhi aap changes dekh sakhte ho par
+aisa primitive mein nahi hota hai.
 
 let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
 console.log(cityName)
@@ -20,3 +28,60 @@ Output
 ]
 
 hyderabad
+
+=> How to change the specefic in an array value using index:
+---------------------------------------------------------
+let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
+cityName[2] = "Hyderabad"
+console.log(cityName)
+
+Output
+------
+[
+  'mumbai',    'delhi',  
+  'Hyderabad', 'chennai',
+  'mumbai',    12,       
+  null,        undefined 
+]
+
+=> how to check the type of array:
+-------------------------------
+it will give you an object. 
+console.log(typeof cityName) => object
+
+How to check an array:
+----------------------
+how to check that the array we have created is actually and array or not.
+console.log(Array.isArray(arrayName))
+
+
+=> Methods of an array:
+------------------------
+=> push: hamesha last mein element to add karega
+let numbers = [10,20,30,40]
+numbers.push(50) => [ 10, 20, 30, 40, 50 ]
+
+=> pop: pop element ko remove karne ke liye use hote hein. 
+=> pop element ko remove karne ke baad usko return bhi karta
+hai eska matlab ham us value ko save bhi kar sakhte hai.
+
+let numbers = [10,20,30,40]
+numbers.pop()
+console.log(numbers) => [10,20,30]
+
+let numbers = [10,20,30,40]
+let poppedValue = numbers.pop()
+console.log(poppedValue) => 40
+
+=> unshift => starting mein element add karne ke liye use hota hai unshift.
+let numbers = [10,20,30,40]
+numbers.unshift(9)
+console.log(numbers) => [9,10,20,30,40]
+
+=> shift: starting se element ko remove karne ke liye ham use karenge shift.
+let numbers = [10,20,30,40]
+numbers.shift()
+console.log(numbers) => [20,30,40]
+
+
+

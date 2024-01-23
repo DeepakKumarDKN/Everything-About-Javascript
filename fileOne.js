@@ -81,6 +81,11 @@ let day = 2;
 //     }
 // }
 
-let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
-console.log(cityName)
-console.log(cityName[2])
+// let cityName = ['mumbai','delhi','hyderabad','chennai','mumbai',12,null,undefined]
+// cityName[2] = "Hyderabad"
+// console.log(cityName)
+
+
+let numbers = [10,20,30,40]
+numbers.shift()
+console.log(numbers)
