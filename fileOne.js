@@ -86,6 +86,21 @@ let day = 2;
 // console.log(cityName)
 
 
-let numbers = [10,20,30,40]
-numbers.shift()
-console.log(numbers)
+// let numbers = [10,20,30,40]
+// numbers.shift()
+// console.log(numbers)
+
+let num1 = 1
+let num2 = num1 
+num1++
+
+console.log(num1)
+console.log(num2)
+
+let arrayOne = [10,20]
+let arrayTwo = arrayOne
+
+arrayOne.push(30)
+
+console.log(arrayOne)
+console.log(arrayTwo)

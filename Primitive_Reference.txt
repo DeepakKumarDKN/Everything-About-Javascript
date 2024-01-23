@@ -1,0 +1,44 @@
+Example for Primitive Type:
+----------------------------
+
+let num1 = 1
+let num2 = num1 
+num1++
+
+console.log(num1)
+console.log(num2)
+
+Primitive mein aggar aap kuch value mein kuch changes kar rahe hein
+jaise ki meine yahan num value ko change kiya hai increase kiya hai
+toh jo changes hai woh dusre mein impact nahi karega jaise ki es 
+example mein meine num 1 and num2 ka value same hai but effect kyun 
+nahi kiya kyun ki har ek value ko yahan allag memory location mila hai
+num and num2 are having diffrent memory location.
+
+Primitive type hamara stack mein save hota hai,
+and it doesnt take more memory.
+
+Example For Reference Type:
+---------------------------
+let arrayOne = [10,20]
+let arrayTwo = arrayOne
+
+arrayOne.push(30)
+
+console.log(arrayOne)
+console.log(arrayTwo)
+
+Array heap mein save hota hai ans stack mein uska pointer save hota hai and ponter ke pass
+meomory location hota hai es example mein bhi arrayone ka pointer to stack mein save mein woh 
+poinout kar raha hon arrayOne ke memory location ko
+
+aur jab ham arrayOne = arrayTwo likhte hain arrayOne ka jo address hai
+usko bhi arrayTwo ka pontier point out karega eska matlab dono same addess ko
+point outkarenge.
+
+array and Object are reference datatype. yahan arrayOne and arrayTwo ka value same hai
+because of this line (let arrayTwo = arrayOne). and reference datatype heap mein save 
+hota hai and dono ka memory location bhi same hai, memory location same hone ke vajeh se
+aggar mein koi changes kar raha hoon arrayOne woh sare changes reflect ho jaenge arrayTwo 
+mein.
+
