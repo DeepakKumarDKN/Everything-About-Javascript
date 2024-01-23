@@ -161,3 +161,29 @@ Output:
 20
 30
 40
+
+
+=> Array Destructuring:
+-----------------------
+
+const myArray = ['value1','value2']
+let[myvar1, myvar2] = myArray;
+
+console.log(myvar1, myvar2)
+
+Output
+------
+value1 value2
+
+Using Spread in Array Destructuring:
+-----------------------------------
+
+const numbers = [10,20,30,40,50,60]
+const [valueOne, ...valueTwo] = numbers
+console.log(valueOne)
+console.log(valueTwo)
+
+Output
+------
+10
+[ 20, 30, 40, 50, 60 ]

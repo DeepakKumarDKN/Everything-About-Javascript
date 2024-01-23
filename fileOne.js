@@ -105,7 +105,7 @@ let day = 2;
 // console.log(arrayOne)
 // console.log(arrayTwo)
 
-let arrayOne = [10,20,30,40]
+// let arrayOne = [10,20,30,40]
 // let arrayTwo = []
 // let arrayTwo = [...arrayOne]
 
@@ -120,6 +120,19 @@ let arrayOne = [10,20,30,40]
 // }
 // console.log(arrayTwo)
 
-for(let i in arrayOne){
-    console.log(arrayOne[i])
-}
+// for(let i in arrayOne){
+//     console.log(arrayOne[i])
+// }
+
+// const myArray = ['value1','value2']
+// let [myvar1, myvar2] = myArray;
+
+// myvar1 = "value changed"
+
+// console.log(myvar1, myvar2)
+
+
+const numbers = [10,20,30,40,50,60]
+const [valueOne, ...valueTwo] = numbers
+console.log(valueOne)
+console.log(valueTwo)
