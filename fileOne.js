@@ -132,7 +132,21 @@ let day = 2;
 // console.log(myvar1, myvar2)
 
 
-const numbers = [10,20,30,40,50,60]
-const [valueOne, ...valueTwo] = numbers
-console.log(valueOne)
-console.log(valueTwo)
+// const numbers = [10,20,30,40,50,60]
+// const [valueOne, ...valueTwo] = numbers
+// console.log(valueOne)
+// console.log(valueTwo)
+
+
+const data = {
+    name:'deepak', 
+    middlename:'kumar',
+    surname:'nayak',
+    hobbies : ['reading','coding','sleeping']
+}
+console.log(data.hobbies)
+
+data.gender = "male"
+data['location'] = "India"
+
+console.log(data)

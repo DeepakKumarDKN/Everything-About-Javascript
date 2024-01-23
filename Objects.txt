@@ -1,1 +1,59 @@
-Object is a reference type like Array. 
+=> Object is a reference type like Array. 
+=> Object are created using curly braces. 
+=> Objects are created using key value pair.
+
+
+const data = {name:'deepak', middlename:'kumar', surname:'nayak'}
+console.log(data)
+
+
+Accesing data from Objects:
+---------------------------
+
+console.log(data.name)
+console.log(data.middlename)
+console.log(data.surname)
+
+Example:
+--------
+const data = {
+    name:'deepak', 
+    middlename:'kumar',
+    surname:'nayak',
+    hobbies : ['reading','coding','sleeping']
+}
+console.log(data.hobbies)
+
+Output:
+-------
+[ 'reading', 'coding', 'sleeping' ]
+
+Adding key and value to it:
+----------------------------
+data.gender = "male";
+
+Output:
+--------
+{
+  name: 'deepak',
+  middlename: 'kumar',
+  surname: 'nayak',
+  hobbies: [ 'reading', 'coding', 'sleeping' ],
+  gender: 'male'
+}
+
+=> Another way of adding key value to objects:
+----------------------------------------------
+
+data['location'] = "India"
+
+Output:
+-------
+{
+  name: 'deepak',
+  middlename: 'kumar',
+  surname: 'nayak',
+  hobbies: [ 'reading', 'coding', 'sleeping' ],
+  gender: 'male',
+  location: 'India'
+}
