@@ -106,7 +106,7 @@ let day = 2;
 // console.log(arrayTwo)
 
 let arrayOne = [10,20,30,40]
-let arrayTwo = []
+// let arrayTwo = []
 // let arrayTwo = [...arrayOne]
 
 // arrayOne.push(5)
@@ -115,7 +115,11 @@ let arrayTwo = []
 
 // console.log(arrayOne === arrayTwo)
 
-for(let i=0; i<arrayOne.length; i++){
-    arrayTwo.push(arrayOne[i])
+// for(let i=0; i<arrayOne.length; i++){
+//     arrayTwo.push(arrayOne[i])
+// }
+// console.log(arrayTwo)
+
+for(let i in arrayOne){
+    console.log(arrayOne[i])
 }
-console.log(arrayTwo)

@@ -130,3 +130,31 @@ console.log(arrayTwo)
 Output:
 -------
 [ 10, 20, 30, 40 ]
+
+Forof Loop for Array:
+--------------------
+let arrayOne = [10,20,30,40]
+for(let i of arrayOne){
+    console.log(i)
+}
+
+Output:
+-------
+10
+20
+30
+40
+
+forin Loop for Array:
+----------------------
+let arrayOne = [10,20,30,40]
+for(let i in arrayOne){
+    console.log(arrayOne[i])
+}
+
+Output:
+-------
+10
+20
+30
+40
