@@ -138,15 +138,38 @@ let day = 2;
 // console.log(valueTwo)
 
 
-const data = {
-    name:'deepak', 
-    middlename:'kumar',
-    surname:'nayak',
-    hobbies : ['reading','coding','sleeping']
-}
-console.log(data.hobbies)
+// const data = {
+//     name:'deepak', 
+//     middlename:'kumar',
+//     surname:'nayak',
+//     hobbies : ['reading','coding','sleeping']
+// }
+// console.log(data.hobbies)
 
-data.gender = "male"
-data['location'] = "India"
+// data.gender = "male"
+// data[' location'] = "India"
 
+// console.log(data)
+
+// const arrayOne = [10,20,30,40]
+// const arrayTwo = [50,60,70,80]
+
+// const result = [...arrayOne, ...arrayTwo]
+// console.log(result)
+
+// const data = {
+//     name:'deepak',
+//     middlename:'kumar'
+// }
+
+// const data2 = {
+//     name:'rahul',
+//      middlename: 'krishna'
+// }
+
+// const result = {data, ...data2}
+// console.log(result)
+
+
+const data = {..."12344567890"}
 console.log(data)
