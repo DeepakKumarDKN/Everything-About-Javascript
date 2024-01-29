@@ -1,0 +1,4 @@
+=> Everything in javascript runs inside the execution context.
+=> Whenever a program gets executed a execution context is created.
+=> And it is divided into two component one is memory component 
+and the other one is code component.
