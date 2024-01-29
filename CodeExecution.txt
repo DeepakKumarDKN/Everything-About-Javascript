@@ -2,3 +2,73 @@
 => Whenever a program gets executed a execution context is created.
 => And it is divided into two component one is memory component 
 and the other one is code component.
+=> The execution context is divided into two phases
+    1. creation phase / memory creation phase.
+
+so lets discuss what will happen in the 1st phase of memroy creation with an example:
+var n = 2;
+function square(num){
+    var ans = num * num;
+    return ans
+}
+
+var square = square(n);
+var square4 = square(4)
+
+so what will happen in the first phase javascript will allocate memory to all those variables
+and function 
+
+so when the cursor will come to var n =2;
+it will allocate some memory to n:
+and it stores a special value into it called undefined. 
+
+now when the control will come to function square line. 
+there the whole code of the function will be saved. 
+square : {whole code of the function}
+
+and then when the control wil come to var square and var square4 there also some 
+memory is assigned to it and undefined will be stored into it.
+
+we will later discuss about undefined but for now i will just say that its a special 
+keyword which got stored into to the variables during memory creation phase.
+------
+Now here comes the Code Execution Phase which is also known as Thread Of Execution.
+so as soon as it encounter the first line of the program there it will fing the value of n
+which iis 2 and it places the value 2 inside n, till now it was undefined but now it will 
+store 2 inside n. 
+
+and then it moves to line where the function is started and there nothng to execute 
+becaue function will not be executed untill and unless we call it. 
+
+then it moves to the line square2. here we are invoking a function. 
+function invocation mean function name with parenthessis it means that we
+are calling the function and it will execute now.
+
+function behave very diffrent in javascript than in any other programing 
+languages now in javascript when we invoke a function all-together a brand
+new execution context is created which is again divied into  two phase 
+memory phase and code excution phase. 
+
+and in the memory phase num and ans both willbe placed with undefined.
+when the code execution phase will start at that time the value of n will be 2 i mean [square(2)]
+and now 2 will be passed to num now num will be placed with 2 before it was undefined.
+
+and then control will come to | var ans = num*num i.e 4 | and the control will come now to 
+return ans that mean it will retrun there from where the function was invoked. but as i have
+discussed that ans will also be placed with undefined but now ans will be placed with 4 and then it will return
+that value, as it was invoked to the line : var square2 = square(n) and now 
+var square2 = 4; 
+
+return ans mean 
+
+now eveything is over from your side just return the value of ans and where it will return '
+it will return there where it was invoked and it was invoked in the line number 15 (look above)
+
+remember square2 will be placed with undefined now the value of square 2 will be 4.
+and now the program stops and the execution context is deleted so this how it works 
+everytime a function executes a brand new function execution context will be created 
+as soon as the function execution gets over everything got deleted.
+Note:
+-----
+num is the parameter 
+n is the argument.
