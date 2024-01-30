@@ -1,0 +1,78 @@
+function a(){
+    console.log(b)
+}
+
+var b = 10;
+a()
+
+can i access b inside a;
+
+in this code when javascript will try to reach line number 2;
+it will try to find out the whether b is present in the local memory 
+space of a or not.
+
+and it wint be there because i have never created b inside a function.
+so what we will get now. will it print undefined, will it print not defined
+
+but we will get the value of b that mean somehow we are getting the value of b 
+which is not inside the function a but outside the function.
+
+lets make another function inside a and lets try to print out the value of a
+again in that function.
+
+function a(){
+    function c(){
+        console.log(b)
+    }
+    c()
+}
+
+var b = 10;
+a()
+
+
+so again i am trying to acess the value of b inside the function c. 
+so here also i will still get access to the value of b.
+
+but if i define b inside the function a will i be able to access to outiside the function.
+for example:
+
+function a(){
+    var a = 10
+    function c(){
+      console.log(b)
+    }
+    c()
+}
+
+console.log(b) # no i cannot access it here so here comes the scope into action
+a()
+
+
+Scope tells us the accessiblity of a specefic variable or a function. in our code.
+Scope is directly proptional to the lexical env. 
+
+Now lets learn about lexical env. 
+So whenever a execution context is created a lexical env also created.
+So Lexical Env is the local memory along with the lexical env of its parent.
+
+Lexical mean heirachy that means function c is sitting lexically inside function a.
+so that means this function is physically present inside a. and a is lexically inside 
+the global scope.
+
+so when javascript engine encounters this line (43) so here i am trying to find out
+the value of b inside function c. so what will happen now.first of all it will try to find
+out the value of b inside the local memory of c which is inside the cand it wont find
+because there is no b is defined inside c and now javascript will try to fond out inside the
+lexical env of its parent and lexical mean where it is physically present
+and c is physically present inside the function a
+
+so basically it is presnt inside the function a and thats why it is printed inside the console.
+but suppose b was not presnt inside a also. so now it will target the lexical env of a parent
+which is global execution context lexical env.
+
+but still it is not presnt inside the global then it will go and search inside the global parent
+i mean lexical env of global parent and it finds null. and now the program stops and js engine will 
+thow us an error that b is not defined.
+
+so the way of finding from one lexical env to another is called Scope Chaining.

@@ -1,0 +1,32 @@
+var a = 7;
+console.log(x)
+
+so even before the first line gets executed in javascript the memory 
+is allocated to a; 
+
+javascript is trying to allocate memory to a even before the first line gets execute
+and in the memory it will allocate it with a special keyword called undefined. 
+
+undefined and not defined both are very diffrent from each other. 
+if we are trying to acess something which we have not declared it at all 
+there we will get notdefined for example here i am tring to access the value of x.
+but have i declared x have i initialized any value to it, No i havn't so here 
+i will get undefined.
+
+in-sort i havn't allocated any memory to x. so if i will try to acess something 
+which is not even allocated any memmroy then obviously i will get notdefined.
+
+undefined is not equal to empty, if somebody tell you that undefined is empty
+then its wrong.
+
+its just like a placeholder its takes its own memory we will see undefined for only
+that particular period of time untill and unless some value is assigned to that particlular value.
+
+javascript is a loosely typed language why i am saying it as a loosely typed language because
+for example i have saved something into a variable called data.
+
+var data = "deepak";
+data = 35; 
+
+this is the reason i am saying it loosely typed because after saving "Deepak" into it
+still i can change its value. but this is not possible in languages like c and c++.
