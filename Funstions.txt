@@ -1,0 +1,16 @@
+function declaration:
+----------------------
+function getName(){
+    console.log(name)
+}
+
+function expression:
+--------------------
+This is called anonymous function. function which doesnot have any name.
+var name = "deepak"
+const getName = function(){
+    return name
+}
+
+console.log(getName())
+
