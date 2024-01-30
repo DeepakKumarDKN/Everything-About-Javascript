@@ -17,3 +17,30 @@ not possible but javascript works very diffrently and it is possible in javascri
 so in line number 2 i am trying to access the value of x even before i have
 initialized any value into it so here i will not get any error but i will get undefined.
 
+so this is where hositing comes into. Hoisting is something where we
+can access something even before initializng and we can access it without 
+any error. 
+
+so if i am going to access the value of x we are getting undefined but
+if i am consoling the function i am getting the whole function so why this is
+happening lets learn behind the scenes how the thngs are going on
+
+remember in the last video we have learned about execution context and its is created 
+whenever we run a javascript program. 
+
+and the execution context is created is divided into two parts one is 
+memory part and the other one is code execution part so this is where
+the answer is.
+
+so even before the code starts execution the memory is allocated to all the variables and function
+inside the variables a special keyword is stored called undefined so this is where the 
+undefined is comming from and the function is pointing out to the whole function/ whole code
+thats why when i am consoling the function we are geting the whole function .
+
+var getName = function(){
+    consooe.log('name')
+}
+
+so here also we will get undefined if we are creating/declaring a normal function 
+then only we will the whole function code. 
+
