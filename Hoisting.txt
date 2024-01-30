@@ -1,0 +1,19 @@
+getName()
+console.log(x)
+
+var x = 7;
+function getName(){
+    console.log('namestey javascript')
+}
+
+Sop in this example i am trying to access getName even before initialized it
+and we are trying to access the value of x even before we have initialized value
+into it 
+
+so in most of the programing languages we will get error here because it is
+not possible but javascript works very diffrently and it is possible in javascript.
+
+
+so in line number 2 i am trying to access the value of x even before i have
+initialized any value into it so here i will not get any error but i will get undefined.
+
